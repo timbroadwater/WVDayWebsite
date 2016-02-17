@@ -1,15 +1,37 @@
 
 /* specific divs */
 .mainbody { 
-	background-repeat: repeat; background: url(background.jpg);
-	background-attachment: fixed;
- 	padding: 0 175px 0 110px;  
+	background: #f4e7d5;/*green url("background.jpg") repeat right top;	*/
+ 	padding: 0 0 0 0;  
 	margin: 0; 
 	position: relative;
 	font: 20px verdana, sans-serif;
-	color: white;
+	color: $neutral-black;
+	min-height: 800px
 	}
 
+.imageArea {
+	float: left;
+	padding: 40px 50px 10px 50px; 
+}
+
+.message {
+	float: left;
+	padding: 40px 50px 0 50px;
+	width:70%;
+	text-align: left;
+}
+
+.schwifty {
+	align: left;
+	text-align: left;
+	float: left;
+	display: block;
+	height: auto; 
+	
+}
+
+	
 .intro { 
 	min-width: 470px;
 	width: 100%;
