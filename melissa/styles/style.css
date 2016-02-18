@@ -1,7 +1,7 @@
 /* specific divs */
 .mainbody { 
-	background: #333F48;/*green url("background.jpg") repeat right top;	*/
- 	padding: 0 0 0 0;  
+	background: #333F48;
+ 	padding: 10px 0 0 0;  
 	margin: 0; 
 	position: relative;
 	font: 20px helvetica, sans-serif;
@@ -19,7 +19,7 @@
 .divParent {
 	background: #333F48;
 	width: 100%;
-	height: 600px;
+	height: 800px;
 	border: 0;
 }
 
