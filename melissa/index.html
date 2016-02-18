@@ -19,20 +19,22 @@
 
         <!-- CSS -->
         <link type="text/css" rel="stylesheet" href="styles/variables.css"></link>
-        <link type="text/css" rel="stylesheet" href="styles/wvu.css"></link>
-        <link type="text/css" rel="stylesheet" href="styles/wvrhc.css"></link>
+        <link type="text/css" rel="stylesheet" href="styles/wvu.css"></link>       
         <link type="text/css" rel="stylesheet" href="styles/ui.css"></link>
-        <link type="text/css" rel="stylesheet" href="styles/styles.css"></link>
-		<link type="text/css" rel="stylesheet" href="style.css"></link>
+     	<link type="text/css" rel="stylesheet" href="styles/style.css"></link>
+		<link type="text/css" rel="stylesheet" href="styles/slider.css"></link>
 
         <!-- JavaScript -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="scripts/scripts.js"></script>
+		<script src="http://www.jssor.com/script/jssor.slider.min.js"></script>
+        <script src="scripts/slider.js"></script>
+		
         
         <!-- External CSS: Helvetica & Font Awesome -->
         <link type="text/css" rel="stylesheet" href="https://fast.fonts.net/cssapi/36d8cd92-7cc7-499b-b169-0eed9d670283.css"></link>
         <link href="https://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" type="text/css" rel="stylesheet">
-        
+        <link href="styles/bootstrap.min.css" type="text/css" rel="stylesheet">
         <!-- ShareThis Code 
         <script type="text/javascript">var switchTo5x=true;</script>
         <script type="text/javascript" src="https://ws.sharethis.com/button/buttons.js"></script>
@@ -76,16 +78,8 @@
             </div>
         </div>
 
-       
-        <div class="collection-header">
-            <div class="wrap"> 
-                <h1 class="collection-header-title">
-                    <a href="/">West Virginia Day</a>
-                </h1>
-            </div>
-        </div>
 
-        <!-- Website Tab Bar -->
+        <!-- Website Tab Bar
         <div class="sticky-header">
             <div class="tbwrap"> 
                 <div class="sticky-header-nav tabBar">
@@ -124,7 +118,8 @@
                         <img src="images/search.svg" alt="Search" id="search-toggle1">
                         <img src="images/x.svg" alt="Search" id="search-toggle2">
                     </a>
-                    <!-- generic WVU Search -->
+-->
+                    <!-- generic WVU Search
                     <form id="wvrhc-search-wrap" class="search-query-form" method="get" action="http://search.wvu.edu/search">
                         <input type="hidden" value="lib.wvu.edu" name="as_sitesearch"></input>
                         <input type="hidden" value="default_frontend" name="client"></input>
@@ -136,46 +131,78 @@
                 </div>
             </div>
         </div>
+-->
+		
 
-        <!-- Main Container -->    			
+
+<!-- Main Container -->    			
 		<div class="mainbody">
-			<img class="imageArea" src="rick.jpg">	
+		<center>
+			<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 1020px; height: 480px;">
 			
-			<div class="message">
-				
-					<center>
-						<strong>Get Schwifty with WV Day!</strong> 
-						<br><br>						
-					</center>
-					We have stuff and junk.  <em>and fill out a form</em>
-					
-					We have stuff and junk.  <em>and fill out a form</em>
-					
-					We have stuff and junk.  <em>and fill out a form</em>
-					
-					We have stuff and junk.  <em>and fill out a form</em>
-					
-					We have stuff and junk.  <em>and fill out a form</em>
-					<br><br>
-					We have stuff and junk.  <em>and fill out a form</em>
-					<br><br>
-					We have stuff and junk.  <em>and fill out a form</em>
-					<br><br>
-					We have stuff and junk.  <em>and fill out a form</em>
-					<br><br>
-					We have stuff and junk.  <em>and fill out a form</em>
-					<br><br>
-					We have stuff and junk.  <em>and fill out a form</em>
-					<br><br>
-					We have stuff and junk.  <em>and fill out a form</em>
-					<br><br>						
-				
-			</div>
+				<!-- Slides Container -->
 			
-		</div>
-        
+				<div u="slides" style="cursor: move; position: relative; overflow: hidden; left: 0px; top: 0px; width: 1020px; height: 480px;">
+					<div>
+						<a href="http://www.google.com"><img u="image" src="images/slide1.png" /></a>
+						<div data-u="caption" data-t="1" data-3d="1" style="position: absolute; top: -50px; left: 125px; width: 350px; height: 30px; background-color: rgba(235,81,0,0.5); font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;">time lined layer animation</div>
+            
+					</div>
+					<div>
+						<a href="http://www.google.com"><img u="image" src="images/slide2.png" /></a>
+					</div>
+					<div>
+						<a href="http://www.google.com"><img u="image" src="images/slide6.png" /></a>
+					</div>
+					<div>
+						<a href="http://www.google.com"><img u="image" src="images/slide5.png" /></a>
+					</div>
+					<div>
+						<a href="http://www.google.com"><img u="image" src="images/slide4.png" /></a>
+					</div>
+					<div>
+						<a href="http://www.google.com"><img u="image" src="images/slide3.png" /></a>
+					</div>
+				</div>
 
-        <!-- Footer -->
+				<!-- Bullet Navigator -->
+				<div data-u="navigator" class="jssorb01" style="bottom:16px;right:16px;">
+					<div data-u="prototype" style="width:12px;height:12px;"></div>
+				</div>
+				<!-- Arrow Navigator -->
+				<span data-u="arrowleft" class="jssora05l" style="top:158px;left:8px;width:40px;height:40px;"></span>
+				<span data-u="arrowright" class="jssora05r" style="top:158px;right:8px;width:40px;height:40px;"></span>
+				<!-- Trigger -->            
+				
+				<script>jssor_slider1_starter('slider1_container');</script>
+			</div>
+		</center>
+		
+		<div class="divParent">		
+	
+			<div class="mainbody message col-md-offset-2 col-md-6 col-sm-6 ">
+					<h1>
+						Registration
+					</h1>
+					<div class="titleline">
+					</div>
+					<br><br>
+					We have stuff and junk.  <em>and fill out a form</em>
+					<br><br>
+					We have stuff and junk.  <em>and fill out a form</em>
+					<br><br>
+					We have stuff and junk.  <em>and fill out a form</em>
+					<br><br>
+					We have stuff and junk.  <em>and fill out a form</em>
+					<br><br>
+					We have stuff and junk.  <em>and fill out a form</em>
+					<br><br>
+					We have stuff and junk.  <em>and fill out a form</em>
+					<br><br>									
+			</div>
+        </div>
+
+<!-- Footer -->
         <footer id="footer">
             <div class="wrap">
                 <div class="school-footer">
