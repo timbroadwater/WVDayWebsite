@@ -34,6 +34,7 @@
         <!-- External CSS: Helvetica & Font Awesome -->
         <link type="text/css" rel="stylesheet" href="https://fast.fonts.net/cssapi/36d8cd92-7cc7-499b-b169-0eed9d670283.css"></link>
         <link href="https://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" type="text/css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
         <link href="styles/bootstrap.min.css" type="text/css" rel="stylesheet">
         <!-- ShareThis Code 
         <script type="text/javascript">var switchTo5x=true;</script>
@@ -163,8 +164,10 @@
 						<a href="http://www.google.com"><img data-u="image" src="images/slide1.png" /></a>	
 					</div>
 				</div>
-				<div style="position: absolute; bottom: 10px; right: 0px; width: 800px; height: 55px; background-color: rgba(0,0,0,0.6);
-						font-size: 50px; color: #ffffff; line-height: 50px; text-align: center;">West Virginia Day: June 20, 2016</div>
+				<div style="position: absolute; bottom: 10px; right: 300px; width: 500px; height: 70px; background-color: rgba(0,0,0,0.6);
+						 font: Trebuchet MS; font-size: 60px; color: #ffffff; text-shadow: 4px 4px #002855; line-height: 60px; text-align: center;">West Virginia Day:</div>
+				<div style="position: absolute; bottom: 10px; right: 0px; width: 300px; height: 70px; background-color: rgba(0,0,0,0.6);
+						font-family: 'iowan', serif; font-size: 50px; color: #ffffff; line-height: 68px; text-align: center;">June 20, 2016</div>
 			
 				<!-- Bullet Navigator -->
 				<div data-u="navigator" class="jssorb01" style="bottom:16px;right:16px;">
@@ -183,18 +186,36 @@
 				
 				<div class="mainbody" style="float:left; height:100%; width:100%">		
 					<div class="indent">
-					<div class="mainbody message col-md-offset-2 col-md-8 col-sm-6 ">
-							<h1>
-								Registration
-							</h1>
-							<div class="titleline">
-							</div>
-							<br><br>
-							Welcome to the WV Day registration page. I have no idea what you are supposed to fill out just yet. So 
-							look at the pretty slideshow at the top.
-							<br><br>
-							<img src="images/form_place_holder.png">									
-					</div>
+						<div class="mainbody message col-md-offset-2 col-md-8 col-sm-6 ">
+								<p>Welcome to the West Virginia Day homepage. We need lots of colorful words and stuff and junk. Tim is going to do a much better write
+								up than I am doing right now. West Virginia is awesome because they invented pepperonni rolls. </p>
+								<BR><BR>
+								<h1>
+									Registration
+								</h1>
+								<div class="titleline">
+								</div>
+								
+								<h4>Please fill out the form below to submit your information and brief description of your presentation for WV Day.</h4>
+								<br>						
+											
+							<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+								<div class="row">
+									<div class="form">
+										<label for="name" >Name:</label><br/>
+										<input id="name" class="input" name="name" type="text" value="" size="20" /><br><br>
+										
+										<label for="email">Email:</label><br/>
+										<input id="email" class="input" name="email" type="text" value="" size="20" /><br><br>
+										
+										<label for="message">Message:</label><br/>
+										<p><textarea id="message" class="input" name="message" rows="7" cols="30"></textarea></p>
+										
+										<input type="button" value="Send"><br><br>
+									</div>
+								</div>	
+							</form>							
+						</div>
 					</div>
 				</div>
 		</div>

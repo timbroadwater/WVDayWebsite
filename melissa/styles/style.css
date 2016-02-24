@@ -1,25 +1,25 @@
-/* specific divs */
+/* WV Day Body */
 .mainbody { 
 	background-color: #333F48;
-	background-image: url("http://www.arogueunderpressure.com/sidebar.png"); 	
+	background-image: url("../images/sidebar.png"); 	
 	background-repeat: repeat-y;
 	background-attachment: fixed;
  	background-position: ;
 	padding: 10px 0 0 0;  
 	margin: 0; 
 	position: relative;
-	font: 20px helvetica, sans-serif;
+	font: 22px "Trebuchet MS", Helvetica, sans-serif;
 	color: white;
 	height: auto;
 	border: 0;
 	}
 
-.imageArea {
-	float: left;
-	padding: 40px 50px 10px 50px; 
-	border: 0;
-}
+h1 {
+    text-shadow: 2px 2px #000000;
+}	
+	
 
+/* Message Body */
 .indent {
 	padding: 0 0 0 20px;
 }
@@ -38,61 +38,65 @@
 	border: 0;
 }
 
+/* Header Line */	
 .titleline {
     border: #EAAA00;
     border-style: solid;
 	
-}    
-	
-.intro { 
-	min-width: 470px;
-	width: 100%;
-}
+}   
 
-	
-body {
-    background-image: url("img_tree.png");
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-attachment: fixed;
-}	
-
-	
-header h1 { 
-	background: transparent url(h1.gif) no-repeat top left;
-	margin-top: 10px;
-	display: block;
-	width: 219px;
-	height: 87px;
+/* Forms Layout */
+.form {
 	float: left;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header h2 { 
-	background: transparent url(h2.gif) no-repeat top left; 
-	margin-top: 58px; 
-	margin-bottom: 40px; 
-	width: 200px; 
-	height: 18px; 
-	float: right;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-
-header {
-	padding-top: 20px;
-	height: 87px;
+	width: 100%;
+	text-align: left;
+	border: 0;
+	padding: 0 0 0 12px;
 }
 
+#contact_form {
+	color: #000000;	
+}
 
-footer { 
-	text-align: center; 
-	}
-footer a:link, footer a:visited { 
-	margin-right: 20px; 
-	}
+#contact_form label {
+	color: #ffffff;
+	text-shadow: 2px 2px #000000;
+ 	font-size: 18px;	
+
+}
+
+#contact_form textarea {
+	background: #9a9b9b;
+	border-radius: 5px;
+	border-width: 2px;
+	border-color: #ffffff;
+	font-family: 'iowan', serif;
+	resize: none;
+}
+
+input[type=text] {
+	background: #9a9b9b;
+	border-radius: 5px;
+	border-width: 2px;
+	border-color: #ffffff;
+	font-family: 'iowan', serif;
+}
+
+input[type=button] {
+    width: 120px;
+	height: 35px;
+    margin-left: 35px;
+    display: block;
+	margin: 0 0 0 240px;
+	color: #ffffff;
+	background: #002855;
+	border-radius: 5px;
+}
+
+ input[type="button"]:hover{
+    border: 2px solid #999;color:#EAAA00;
+}
+	
+
+
 
