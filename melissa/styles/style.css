@@ -51,23 +51,53 @@ html, body, form, nav, ul {
 	color: #000000;
 }
 
+/* Image Links */
+.imagelink {
+	margin: 0 0 0 0; 
+	height: auto;
+	display: block;
+    overflow: hidden;
+}	
+
+.imagelink ul {
+	list-style-type: none;
+	font-family: 'iowan', serif;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.imagelink ul li {
+	display: inline-block;
+	float: left;
+}
+
+.imagelink ul li a {
+	padding: 10px 10px;
+	font-size: 24px;
+	display: block;
+}
+
 /* Links */
-.story a:link {
-	color: #ffffff;
-}
-
-.story a:visited {
-	color: #ffffff;
-}
-
-.story a:hover {
+.imagelink ul li a:link {
 	color: #000000;
-	text-decoration: none;
 }
 
-.story a:active {
-	color: #ffffff;
+.imagelink ul li a:visited {
+	color: #000000;
 }
+
+.imagelink ul li a:hover {
+	background-color: #354b5c;
+	text-decoration: none;
+	border-radius: 20px;
+}
+
+.imagelink ul li a:active {
+	color: #000000;
+}
+
+
+
 
 .wvu-header-mobile-list a:hover {
 	color:#ffffff;
