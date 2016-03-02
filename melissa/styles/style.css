@@ -2,7 +2,7 @@ html, body, form, nav, ul {
   display: block;
   margin: 0;
   padding: 0;
-  text-align: center; }
+}
 
 /* Navigation */
 .bar {
@@ -62,7 +62,7 @@ html, body, form, nav, ul {
 	background-repeat: repeat-y;
 	background-attachment: fixed;
  	background-position: ;
-	padding: 20px 0 0 0;  
+	padding: 0 0 0 0;  
 	margin: 0; 
 	position: relative;
 	font: 22px "Trebuchet MS", Helvetica, sans-serif;
@@ -73,16 +73,27 @@ html, body, form, nav, ul {
 
 h1 {
     text-shadow: 2px 2px #000000;
+	height: 25px;
 }	
 
 /* Message Body */
 
 .message {
 	float: left;
-	padding: 40px 50px 0 50px;
+	padding: 0 50px 0 50px;
 	width:100%;
 	text-align: left;
 	border: 0;
+}
+
+.picture {
+	float: right;
+	padding: 0 0 0 20px;
+}
+
+.story {
+	font-size: 20px;
+	text-align: left;
 }
 
 /* Header Line */	
