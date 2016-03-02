@@ -51,6 +51,24 @@ html, body, form, nav, ul {
 	color: #000000;
 }
 
+/* Links */
+.story a:link {
+	color: #ffffff;
+}
+
+.story a:visited {
+	color: #ffffff;
+}
+
+.story a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+.story a:active {
+	color: #ffffff;
+}
+
 .wvu-header-mobile-list a:hover {
 	color:#ffffff;
 }
