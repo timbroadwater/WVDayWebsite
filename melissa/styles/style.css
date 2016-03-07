@@ -1,44 +1,73 @@
-html, body, form, nav, ul {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
 /* Navigation */
 .bar {
     border: #BFB8AF;
 	background: #BFB8AF;
-    border-style: solid;
 	margin: 0 0 0 0; 
 	height: auto;
 	display: block;
-    overflow: hidden;
 }	
 
 .bar ul {
-	list-style-type: none;
+    list-style-type: none;
 	font-family: 'iowan', serif;
+	font-size: 24px;
+    margin: 0 auto;
+    padding: 0;
+	height: 54px;
 	width: 90%;
-	margin: 0 auto;
 }
 
 .bar ul li {
+    float: left;
 	display: inline-block;
-	float: left;
+
 }
 
-.bar ul li a {
-	padding: 10px 50px;
-	font-size: 24px;
-	display: block;
+.bar ul li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+	padding: 10px 40px;
 }
+
+.bar ul li a:hover, .dropdown:hover .dropbtn {
+    color: white;
+}
+
+.bar ul li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+	font-family: 'iowan', serif;
+	font-size: 24px;
+    display: none;
+    position: absolute;
+	z-index: 4;
+    background-color: #BFB8AF;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	width: 100%;
+}
+
+.dropdown-content a:hover {background-color: #333F48}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 
 /* Links */
-.bar ul li a:link {
-	color: #000000;
-}
-
-.bar ul li a:visited {
+.bar ul li a {
 	color: #000000;
 }
 
@@ -47,15 +76,7 @@ html, body, form, nav, ul {
 	text-decoration: none;
 }
 
-.bar ul li a:active {
-	color: #000000;
-}
-
-.story a:link {
-	color: #ffffff;
-}
-
-.story a:visited {
+.story a {
 	color: #ffffff;
 }
 .story a:hover {
@@ -63,13 +84,18 @@ html, body, form, nav, ul {
 	text-decoration: none;
 }
 
-.story a:active {
-	color: #ffffff;
+.imagelink ul li a {
+	color: #000000;
+}
+
+.imagelink ul li a:hover {
+	background-color: #354b5c;
+	text-decoration: none;
+	border-radius: 20px;
 }
 
 
-
-/* Image Links */
+/* Image Navigation */
 .imagelink {
 	margin: 0 0 0 0; 
 	height: auto;
@@ -95,25 +121,7 @@ html, body, form, nav, ul {
 	display: block;
 }
 
-/* Links */
-.imagelink ul li a:link {
-	color: #000000;
-}
-
-.imagelink ul li a:visited {
-	color: #000000;
-}
-
-.imagelink ul li a:hover {
-	background-color: #354b5c;
-	text-decoration: none;
-	border-radius: 20px;
-}
-
-.imagelink ul li a:active {
-	color: #000000;
-}
-
+/* For WVU Header conflict */
 .wvu-header-mobile-list a:hover {
 	color:#ffffff;
 }
@@ -121,7 +129,7 @@ html, body, form, nav, ul {
 /* WV Day Body */
 .mainbody { 
 	background-color: #333F48;
-	background-image: url("../images/sidebar.png"); 	
+	background-image: url("../img/sidebar.png"); 	
 	background-repeat: repeat-y;
 	background-attachment: fixed;
  	background-position: ;
@@ -132,7 +140,7 @@ html, body, form, nav, ul {
 	color: white;
 	height: auto;
 	border: 0;
-	}
+}
 
 h1 {
     text-shadow: 2px 2px #000000;
@@ -140,7 +148,6 @@ h1 {
 }	
 
 /* Message Body */
-
 .message {
 	float: left;
 	padding: 0 50px 0 50px;
@@ -152,6 +159,7 @@ h1 {
 .picture {
 	float: right;
 	padding: 0 0 0 20px;
+	display: inline-block;
 }
 
 .story {
